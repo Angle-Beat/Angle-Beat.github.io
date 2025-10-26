@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鑫阳门窗</title>
+    <style>
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            text-align: center;
+            color: #2c3e50; /* 深蓝灰色 */
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product {
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            margin: 0 auto 15px;
+            display: block;
+            border-radius: 4px;
+        }
+        .product p {
+            color: #34495e; /* 深灰蓝色 */
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #2c3e50;
+            margin: 20px 0;
+        }
+        .content p {
+            text-indent: 2em;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(45deg, #3498db, #2c3e50);
+            color: white;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(45deg, #3498db, #2c3e50);
+            color: white;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+        /* 媒体查询 */
+        @media (max-width: 768px) {
+            .product {
+                flex: 1 0 calc(50% - 20px);
+                max-width: none;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .product {
+                flex: 1 0 100%;
+            }
+            .content p {
+                text-indent: 0;
+                padding: 10px;
+            }
+            .header h1 {
+                font-size: 1.8rem;
+            }
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e0f7fa 0%, #e6f2ff 50%, #f0f8ff 100%);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>欢迎来到鑫阳门窗</h1>
+        </div>
+        <div class="content">
+            <p>您还在为找一家质量靠得住、价格实在的门窗公司而烦恼吗！那么您来鑫阳吧!本公司以热诚的服务、精湛的技术、实在的价格欢迎您的到来！另外本公司品种齐全，您无须今天到这里订做封阳台窗，明天到那里做门，大大节约了您的宝贵时间。</p>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="断桥平开窗.png" alt="断桥平开窗">
+                <p>断桥平开窗</p>
+            </div>
+            <div class="product">
+                <img src="厨卫门.png" alt="厨卫门">
+                <p>厨卫门</p>
+            </div>
+            <div class="product">
+                <img src="别墅铜大门.png" alt="别墅铜大门">
+                <p>别墅铜大门</p>
+            </div>
+            <div class="product">
+                <img src="卧室门.png" alt="卧室门">
+                <p>卧室门</p>
+            </div>
+        </div>
+        <div class="content">
+            <p>联系电话：15729795317</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>商标链接1</p>
+        <p>商标链接2</p>
+    </div>
+</body>
+</html>
